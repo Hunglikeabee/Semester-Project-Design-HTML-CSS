@@ -1,0 +1,284 @@
+@import "variables.css";
+
+@font-face {
+  font-family: Helvetica, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-family: var(--font1);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: var(--font1);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+    font-family: var(--font1);
+    font-size: 14px;
+}
+
+a {
+    font-family: var(--font1);
+    font-weight: bold;
+    color: var(--black);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--red);
+}
+
+/* Header */
+
+header {
+  height: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--white);
+}
+
+.header-menu {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 4;
+}
+
+.menuitems {
+  padding-right: 50px;
+}
+
+.logo-csm {
+  height: 50px;
+  width: auto;
+  margin: 10px 0 10px 5%;
+}
+
+#hamburgermenu {
+  display: none;
+}
+.dropdown {
+  display: none;
+}
+
+.dropdown a:hover {
+  color: var(--green);
+  background-color: white;
+}
+
+.dropdown a {
+  text-decoration: none;
+  padding: 5px;
+  color: var(--black);
+  width: 100%;
+}
+
+#hamburgermenu:checked ~ .dropdown {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: absolute;
+  flex-direction: column;
+  top: 60px;
+  background: darkgray;
+  z-index: 10;
+}
+
+/* Main */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--white);
+}
+
+.index-top {
+  background-image: url("/images/small-whiteboard.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 300px;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.cta-young {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 0 1px black;
+}
+
+.cta-info {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 0 1px black;
+}
+
+.cta-young:hover, .cta-info:hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+.main-text {
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.exhibitions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  width: 100%;
+  background: lightseagreen;
+  margin-top: 10px;
+}
+
+.exhibit-spaces {
+  width: 170px;
+  height: 140px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 2px;
+}
+
+.exhibit-spaces img {
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+
+.exhibit-spaces a {
+  text-decoration: none;
+}
+
+.exhibit-spaces h2 {
+  color: black;
+  text-align: center;
+  position: relative;
+  bottom: 38px;
+  text-decoration: none;
+  padding: 5px;
+  background: var(--white);
+}
+
+.exhibit-spaces:hover {
+    color: var(--white);
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    text-align: left;
+    background: var(--blue)
+}
+
+
+.events h1 {
+    grid-column: 1/3;
+    text-align: center;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: var(--white);
+}
+
+.events h2, p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.events img {
+    width: 100%;
+
+}
+
+.event2img {
+    justify-self: right;
+    grid-row: 3;
+}
+
+/* Footer */
+
+footer {
+    background: var(--gray);
+}
+
+footer section {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer section div {
+    padding-bottom: 50px;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .exhibitions {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0px;
+  }
+
+  main {
+      padding: 0;
+  }
+
+  .index-top {
+      border-radius: 0px;
+  }
+
+  .events {
+      display: block;
+  }
+
+  .events h1 {
+      grid-column: 0;
+  }
+
+  footer section {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .exhibitions {
+      grid-template-columns: 1fr;
+  }
+
+  footer section {
+      grid-template-columns: 1fr;
+  }
+}
