@@ -230,10 +230,10 @@ main {
   background: var(--green);
 }
 
-.events h2,
-p {
-  padding-left: 10px;
-  padding-right: 10px;
+.event1,
+.event2,
+.event3 {
+  padding: 30px 10px 30px 10px;
 }
 
 .events img {
