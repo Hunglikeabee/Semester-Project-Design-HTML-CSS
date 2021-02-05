@@ -1,0 +1,21 @@
+h1 {
+    margin-left: 10%;
+}
+
+p {
+    margin-left: 15%;
+    margin-right: 5%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.toppicture {
+    padding-top: 50px;
+    width: 100%;
+    height: 40vw;
+    max-height: 400px;
+}
+
+main section {
+    margin-bottom: 40px;
+}
