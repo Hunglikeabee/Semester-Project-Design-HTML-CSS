@@ -84,6 +84,7 @@ label {
 #hamburgermenu {
   display: none;
 }
+
 .dropdown {
   display: none;
   justify-self: right;
@@ -124,7 +125,7 @@ main {
 }
 
 .index-top {
-  background-image: url("/images/small-whiteboard.jpg");
+  background-image: url("/images/small-whiteboard.webp");
   background-size: cover;
   background-position: center center;
   height: 30vh;
@@ -285,6 +286,10 @@ table {
 .fab {
   color: white;
   font-size: 30px;
+}
+
+.fas {
+    font-size: 20px;
 }
 
 .copyright {
