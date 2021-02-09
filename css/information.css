@@ -2,27 +2,46 @@
     background: url("/images/small-museumtext.jpg");
     background-size: 100% 100%;
     height: 400px;
-    margin-bottom: 50px;
-    filter:opacity(20%);
+    margin-bottom: 10px;
+    max-width: 100%;
 }
 
-.text-picture {
-    position: relative;
-    bottom: 400px;
-    left: 40px;
-    max-width: 200px;
+.text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
 }
 
-.info-paragraph{
-    position: relative;
-    bottom: 350px;
-    max-width: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
+.text-grid div, table {
+    padding: 10px;
+    border: 1px solid black;
+    background: var(--white);
+    margin: 5px;
+}
+
+.text-grid table {
+    position: absolute;
+    white-space: nowrap;
+    top: 80px;
+}
+
+footer table {
+    background: var(--black);
+    padding: 0px;
 }
 
 main {
-    max-height: 800px;
-    overflow: hidden;
-    background: var(--white);
+    background: var(--blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .text-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .text-grid {
+        grid-template-columns: 1fr;
+    }
 }

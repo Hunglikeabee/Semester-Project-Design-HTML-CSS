@@ -1,0 +1,44 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    margin: 0 auto;
+    background: var(--white);
+}
+
+.young-top {
+    justify-self: center;
+}
+
+.young-top p {
+    position: relative;
+    top: 80px;
+}
+
+main img {
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    min-height: 200px;
+    min-width: 220px;
+}
+
+.redtext {
+    color: var(--red);
+    font: var(--font1);
+    font-weight: bold;
+}
+
+h1 {
+
+}
+
+.section-text {
+    justify-self: center;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.section-text p {
+    padding-bottom: 20px;
+}
