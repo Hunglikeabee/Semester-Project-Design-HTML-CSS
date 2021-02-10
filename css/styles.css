@@ -82,7 +82,8 @@ header {
   align-items: center;
 }
 
-.header-menu a, label{
+.header-menu a,
+label {
   margin-right: 30px;
   padding: 6px;
   cursor: pointer;
@@ -173,7 +174,7 @@ main {
   width: 100px;
   text-decoration: none;
   padding: 10px;
-  background: var(--yellow);
+  background: var(--white);
   box-shadow: 2px 2px 5px 1px black;
   border-radius: 3px;
 }
@@ -185,14 +186,14 @@ main {
   width: 100px;
   text-decoration: none;
   padding: 10px;
-  background: var(--yellow);
+  background: var(--white);
   box-shadow: 2px 2px 5px 1px black;
   border-radius: 3px;
 }
 
 .cta-young:hover,
 .cta-info:hover {
-  background: var(--red);
+  background: var(--yellow);
 }
 
 .main-text {
@@ -364,16 +365,16 @@ table {
     grid-template-columns: 1fr 1fr;
   }
 
-  .index-top {
-    background-position: right center;
-  }
-
   .index-top h1 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .index-top h2 {
-      font-size: 14px;
+    font-size: 14px;
+  }
+
+  strong {
+    font-size: 16px;
   }
 
   .events {
