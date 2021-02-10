@@ -1,28 +1,39 @@
 @import "variables.css";
 
 @font-face {
-  font-family: Helvetica, Verdana, Tahoma, sans-serif;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 h1 {
   font-family: var(--font1);
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 28px;
 }
 
 h2 {
-  font-family: var(--font1);
+  font-family: var(--font2);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: var(--font2);
   font-size: 16px;
   font-weight: bold;
 }
 
 p {
-  font-family: var(--font1);
+  font-family: var(--font2);
   font-size: 14px;
 }
 
 a {
-  font-family: var(--font1);
+  font-family: var(--font2);
   font-weight: bold;
   color: var(--black);
 }
@@ -32,6 +43,11 @@ body {
   padding: 0;
 }
 
+strong {
+  font-size: 22px;
+  color: var(--red);
+}
+
 .backgroundpic {
   position: fixed;
   background: url("/images/small-background.webp");
@@ -39,6 +55,7 @@ body {
   background-size: cover;
   background-position: center center;
   filter: blur(6px);
+  opacity: 50%;
   width: 100%;
   height: 150vh;
   z-index: -1;
@@ -69,6 +86,7 @@ header {
 label {
   margin-right: 30px;
   padding: 6px;
+  cursor: pointer;
 }
 
 .logo-container {
@@ -125,9 +143,7 @@ main {
 }
 
 .index-top {
-  background-image: url("/images/small-whiteboard.webp");
-  background-size: cover;
-  background-position: center center;
+  background: var(--black);
   height: 30vh;
   width: 100%;
   max-height: 300px;
@@ -135,6 +151,23 @@ main {
   text-align: center;
   position: relative;
   box-shadow: 0px 0px 10px -5px;
+  padding-top: 20px;
+}
+
+.index-top h1 {
+  position: relative;
+  top: 40px;
+  margin: 0px 40px 0px 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.index-top h2 {
+  position: relative;
+  top: 40px;
+  margin: 0px 40px 0px 20px;
+  text-align: center;
+  color: var(--yellow);
 }
 
 .cta-young {
@@ -143,7 +176,7 @@ main {
   left: 20px;
   width: 100px;
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
   background: var(--yellow);
   box-shadow: 2px 2px 5px 1px black;
   border-radius: 3px;
@@ -155,7 +188,7 @@ main {
   right: 20px;
   width: 100px;
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
   background: var(--yellow);
   box-shadow: 2px 2px 5px 1px black;
   border-radius: 3px;
@@ -163,7 +196,7 @@ main {
 
 .cta-young:hover,
 .cta-info:hover {
-  background: var(--green);
+  background: var(--red);
 }
 
 .main-text {
@@ -201,11 +234,11 @@ main {
   text-decoration: none;
 }
 
-.exhibit-spaces h2 {
+.exhibit-spaces h3 {
   color: black;
   text-align: center;
   position: relative;
-  bottom: 42px;
+  bottom: 45px;
   text-decoration: none;
   padding: 5px;
   background: var(--white);
@@ -224,7 +257,7 @@ main {
   background: var(--blue);
 }
 
-.events h1 {
+.events h2 {
   grid-column: 1/3;
   text-align: center;
   margin: 0px;
@@ -236,7 +269,11 @@ main {
 .event1,
 .event2,
 .event3 {
-  padding: 30px 10px 30px 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.event3 p {
+  margin: 0;
 }
 
 .events img {
@@ -289,12 +326,12 @@ table {
 }
 
 .fas {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .copyright {
   text-align: center;
-  font-family: var(--font1);
+  font-family: var(--font2);
   font-weight: bold;
   font-size: 14px;
   padding-bottom: 5px;
@@ -309,7 +346,7 @@ th {
   white-space: nowrap;
   font-weight: normal;
   font-size: 14px;
-  font-family: var(--font1);
+  font-family: var(--font2);
 }
 
 table {
@@ -317,7 +354,7 @@ table {
 }
 
 .openhours {
-  font-family: var(--font1);
+  font-family: var(--font2);
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 10px;
@@ -326,7 +363,7 @@ table {
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .exhibitions {
     grid-template-columns: 1fr 1fr;
   }
@@ -339,16 +376,21 @@ table {
     display: block;
   }
 
-  .events h1 {
+  .events h2 {
     grid-column: 0;
   }
 
   footer section {
     grid-template-columns: 1fr 1fr;
   }
+  .event1,
+  .event2,
+  .event3 {
+    padding: 30px 10px 30px 10px;
+  }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .exhibitions {
     grid-template-columns: 1fr;
   }

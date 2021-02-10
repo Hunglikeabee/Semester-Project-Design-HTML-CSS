@@ -34,13 +34,13 @@ main {
     background: var(--blue);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .text-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
     .text-grid {
         grid-template-columns: 1fr;
     }

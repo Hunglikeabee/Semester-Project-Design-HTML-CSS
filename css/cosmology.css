@@ -1,28 +1,23 @@
-h1 {
-    margin-left: 10%;
+h2 {
+  margin-left: 10%;
 }
 
 main p {
-    margin-left: 10%;
-    margin-right: 5%;
-    max-width: 400px;
-    margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 5%;
+  max-width: 400px;
+  margin-bottom: 20px;
 }
 
 .toppicture {
-    background-image: url("/images/small-cosmology.jpg");
-    background-position: center center;
-    width: 100%;
-    height: 50vh;    
+  background-image: url("/images/small-cosmology.jpg");
+  background-position: center center;
+  width: 100%;
+  height: 40vh;
+  max-height: 70vw;
 }
 
 main section {
-    padding-bottom: 40px;
-    background: var(--blue);
-}
-
-@media only screen and (max-width: 600px) {
-    .toppicture {
-        
-    }
+  padding-bottom: 40px;
+  background: var(--blue);
 }
