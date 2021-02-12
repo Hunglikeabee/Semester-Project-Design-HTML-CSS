@@ -53,7 +53,6 @@ strong {
 
 header {
   position: fixed;
-  z-index: 100;
   height: 60px;
   width: 100%;
   margin: 0 auto;
@@ -64,6 +63,7 @@ header {
 }
 
 .header-menu {
+    z-index: 9001;
   display: flex;
   max-width: 100%;
   width: 1000px;
@@ -94,8 +94,18 @@ label {
 }
 
 .dropdown {
+    z-index: 9001;
+    position: relative;
   display: none;
   justify-self: right;
+  animation-name: menuanimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes menuanimation {
+    0% {top: -60px;}
+    100% {top: 60px}
 }
 
 .dropdown a:hover {
