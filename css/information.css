@@ -19,10 +19,9 @@ main div, main table {
   margin: 5px;
 }
 
-.text-grid table {
-  position: absolute;
-  white-space: nowrap;
-  top: 80px;
+main table {
+    min-height: 250px;
+    border: none;
 }
 
 footer table {

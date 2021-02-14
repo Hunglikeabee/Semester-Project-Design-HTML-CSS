@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: 20px;
   font-weight: bold;
 }
@@ -52,6 +52,7 @@ strong {
 /* Header */
 
 header {
+  z-index: 10;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -62,8 +63,12 @@ header {
   box-shadow: 0px 5px 10px -5px;
 }
 
+.fas {
+    position: relative;
+    z-index: 10;
+}
+
 .header-menu {
-    z-index: 9001;
   display: flex;
   max-width: 100%;
   width: 1000px;
@@ -80,6 +85,8 @@ label {
 }
 
 .logo-container {
+  position: relative;
+  z-index: 10;
   flex: 4;
 }
 
@@ -89,28 +96,34 @@ label {
   margin: 10px;
 }
 
+.dropdown {
+    z-index: 4;
+}
+
 #hamburgermenu {
   display: none;
 }
 
 .dropdown {
-    z-index: 9001;
-    position: relative;
   display: none;
   justify-self: right;
   animation-name: menuanimation;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-out;
 }
 
 @keyframes menuanimation {
-    0% {top: -60px;}
+    0% {top: -60px; opacity: 0%;}
     100% {top: 60px}
+}
+
+.active {
+    background-color: var(--green);
 }
 
 .dropdown a:hover {
   color: var(--blue);
-  background-color: var(--white);
+  background-color: var(--gray);
 }
 
 .dropdown a {
@@ -130,7 +143,7 @@ label {
   right: 0%;
   top: 60px;
   background: var(--white);
-  box-shadow: 0px 5px 10px -5px;
+
 }
 
 /* Main */
