@@ -12,7 +12,7 @@
   padding: 10px;
 }
 
-main div, main table {
+main div, main table, .form__info {
   padding: 10px;
   border: 1px solid black;
   background: var(--white);
@@ -24,23 +24,50 @@ main table {
     border: none;
 }
 
-footer table {
-  background: var(--black);
-  padding: 0px;
-}
-
 main {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 640px) {
-  .text-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.form__info {
+    display: flex;
+    flex-direction: column;
 }
 
-@media only screen and (max-width: 400px) {
+.checkbox {
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    border: none;
+}
+
+.checkbox label {
+    margin: 0;
+}
+
+.sendbutton {
+    padding: 5px;
+    background: var(--blue);
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.form__info input {
+    padding: 5px;
+}
+
+#textarea {
+    resize: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .text-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media only screen and (max-width: 640px) {
   .text-grid {
     grid-template-columns: 1fr;
   }

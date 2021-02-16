@@ -99,6 +99,21 @@
                     <h3>Shop</h3>
                     <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
                 </div>
+                <form method="POST" class="form__info">
+                    <h3>Contact Us</h3>
+                    <label for="firstname">Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form__info">
+                    <label for="phone">Number</label>
+                    <input type="tel" name="phone" id="phone" class="form__input">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="form__input" required>
+                    <div class="checkbox">
+                        <label for="infoletter">Signup for infoletter</label>
+                        <input type="checkbox" id="infoletter" name="inforletter">
+                    </div>
+                    <textarea name="textarea" id="textarea" maxlength="200" cols="30" rows="10"></textarea>
+                    <a href="index.html" class="sendbutton">Send</a>
+                </form>
             </section>
         </main>
         <footer>
@@ -107,6 +122,21 @@
                     <h3>Address</h3>
                     <p>Museumsvegen 1</p>
                     <p>2414 Elverum</p>
+                </div>
+                <div class="socialmedia">
+                    <h3>Follow us</h3>
+                    <div>
+                        <label for="facebook">
+                            <a href="https://www.facebook.com/groups/716522351730441" aria-label="Link to Facebook page">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </label>
+                        <label for="instagram">
+                            <a href="https://www.instagram.com/elverum_frisbeeklubb/" aria-label="Link to Instagram page">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </label>
+                    </div>
                 </div>
                 <div>
                     <h3>Price</h3>
@@ -146,19 +176,7 @@
                     </tr>
                 </table>
             </section>
-            <div class="socialmedia">
-                <label for="facebook">
-                    <a href="https://www.facebook.com/groups/716522351730441">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </label>
-                <label for="instagram">
-                    <a href="https://www.instagram.com/elverum_frisbeeklubb/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </label>
-            </div>
             <div class="copyright">&copy Community Science Museum 2021</div>
-        </footer>   
+        </footer>     
     </body>
 </html>
