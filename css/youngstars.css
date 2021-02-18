@@ -30,7 +30,7 @@ main img {
 }
 
 h1 {
-  position: fixed;
+  position: absolute;
   padding: 10px;
   top: 75px;
   background: var(--blue);

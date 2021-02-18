@@ -1,5 +1,5 @@
 h1 {
-  position: fixed;
+  position: absolute;
   padding: 10px;
   top: 45px;
   background: var(--blue);
