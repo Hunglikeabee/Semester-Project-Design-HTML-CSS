@@ -209,7 +209,7 @@ main {
   text-decoration: none;
   padding: 10px;
   background: var(--white);
-  box-shadow: 1px 1px 5px 1px var(--white);
+  box-shadow: 1px 1px 5px 1px var(--yellow);
   border-radius: 3px;
   text-align: center;
 }
@@ -222,7 +222,7 @@ main {
   text-decoration: none;
   padding: 10px;
   background: var(--white);
-  box-shadow: 1px 1px 5px 1px var(--white);
+  box-shadow: 1px 1px 5px 1px var(--yellow);
   border-radius: 3px;
   text-align: center;
 }
@@ -336,18 +336,8 @@ footer section {
   color: var(--white);
 }
 
-footer section div,
-table {
-  padding-bottom: 50px;
-}
-
-.socialmedia {
-  min-width: 120px;
-  display: block;
-}
-
-.socialmedia label {
-  display: inline-block;
+.footer__margin {
+  margin-bottom: 40px;
 }
 
 .fab {
@@ -371,25 +361,17 @@ table {
   width: 100%;
 }
 
-th {
-  text-align: left;
+.opening div{
+  display: flex;
+  justify-content: space-between;
   white-space: nowrap;
-  font-weight: normal;
-  font-size: 14px;
-  font-family: var(--font2);
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-table {
-  margin-top: 0px;
-  table-layout: fixed;
-}
-
-.openhours {
-  font-family: var(--font2);
-  font-size: 16px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 10px;
+.opening p {
+  margin: 0 0 4px 0;
 }
 
 /* Media Queries */
@@ -397,6 +379,7 @@ table {
 @media only screen and (max-width: 640px) {
   .exhibitions {
     grid-template-columns: 1fr 1fr;
+    max-width: 400px;
   }
 
   .headerh1 h1 {

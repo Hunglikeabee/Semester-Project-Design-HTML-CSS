@@ -4,6 +4,8 @@
   height: 400px;
   margin-bottom: 10px;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .text-grid {
@@ -12,7 +14,11 @@
   padding: 10px;
 }
 
-main div, main table, .form__info {
+.visit-us {
+  background: var(--blue);
+}
+
+main div, .form__info {
   padding: 10px;
   border: 1px solid black;
   background: var(--white);
@@ -29,9 +35,10 @@ main {
   margin: 0 auto;
 }
 
-.form__info {
+.form__info, #textarea {
     display: flex;
     flex-direction: column;
+    font-family: var(--font2);
 }
 
 .checkbox {
@@ -39,6 +46,7 @@ main {
     margin: 0;
     padding: 5px 0;
     border: none;
+    color: var(--blue);
 }
 
 .checkbox label {
@@ -46,6 +54,7 @@ main {
 }
 
 .sendbutton {
+    margin-top: 10px;
     padding: 5px;
     background: var(--blue);
     font-size: 20px;
@@ -59,6 +68,12 @@ main {
 
 #textarea {
     resize: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .map {
+    grid-column: 2/4
+  }
 }
 
 @media only screen and (max-width: 1000px) {

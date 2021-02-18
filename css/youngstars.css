@@ -29,6 +29,15 @@ main img {
   font-weight: bold;
 }
 
+h1 {
+  position: fixed;
+  padding: 10px;
+  top: 75px;
+  background: var(--blue);
+  font-size: 24px;
+  white-space: nowrap;
+}
+
 h2 {
   color: var(--white);
 }
