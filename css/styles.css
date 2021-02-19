@@ -110,11 +110,7 @@ label {
 
 @keyframes menuanimation {
   0% {
-    top: -60px;
     opacity: 0%;
-  }
-  100% {
-    top: 60px;
   }
 }
 
@@ -150,6 +146,10 @@ label {
 
 footer {
   background: var(--black);
+}
+
+footer h3 {
+  color: var(--blue);
 }
 
 .footer__container {

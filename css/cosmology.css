@@ -1,5 +1,9 @@
 /* Main */
 
+main {
+  padding-top: 60px;
+}
+
 h2 {
   margin-left: 10%;
   color: var(--white);
