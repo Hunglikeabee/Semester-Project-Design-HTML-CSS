@@ -1,3 +1,5 @@
+/* Main */
+
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,50 +7,43 @@ main {
   margin: 0 auto;
 }
 
-.young-top {
+.main__image-container {
   justify-self: center;
 }
 
-.young-top p {
+.main__image-container p {
   position: relative;
-  top: 80px;
+  color: var(--red);
+  font: var(--font2);
+  font-weight: bold;
+  top: 120px;
   left: 10px;
 }
 
-main img {
+.main__image-container img {
   max-width: 400px;
   height: auto;
   width: 100%;
   min-height: 200px;
   min-width: 220px;
+  margin-top: 30px;
 }
 
-.redtext {
-  color: var(--red);
-  font: var(--font2);
-  font-weight: bold;
-}
-
-h1 {
+.main__h1--styling {
   position: absolute;
-  padding: 10px;
-  top: 75px;
   background: var(--blue);
-  font-size: 24px;
+  padding: 10px;
   white-space: nowrap;
+  top: 45px;
 }
 
-h2 {
-  color: var(--white);
-}
-
-.section-text {
+.main__section-text {
   justify-self: center;
   max-width: 400px;
   margin: 20px;
   color: var(--white);
 }
 
-.section-text p {
+.main__section-text p {
   padding-bottom: 20px;
 }

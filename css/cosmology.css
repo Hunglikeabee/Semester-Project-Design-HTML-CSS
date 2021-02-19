@@ -1,15 +1,14 @@
-h1 {
-  position: absolute;
-  padding: 10px;
-  top: 45px;
-  background: var(--blue);
-  font-size: 24px;
-  white-space: nowrap;
-}
+/* Main */
 
 h2 {
   margin-left: 10%;
   color: var(--white);
+}
+
+.main-container {
+  padding-bottom: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 main p {
@@ -20,7 +19,7 @@ main p {
   color: var(--white);
 }
 
-.toppicture {
+.main__toppicture-container {
   background-image: url("/images/small-cosmology.webp");
   background-repeat: no-repeat;
   background-position: center center;
@@ -32,8 +31,10 @@ main p {
   padding: 0;
 }
 
-main section {
-  padding-bottom: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
+.main__h1--styling {
+  position: absolute;
+  background: var(--blue);
+  padding: 10px;
+  white-space: nowrap;
+  top: 45px;
 }

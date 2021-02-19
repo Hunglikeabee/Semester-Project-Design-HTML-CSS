@@ -12,7 +12,7 @@
 
 h1 {
   font-family: var(--font1);
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h2 {
@@ -64,47 +64,43 @@ header {
 }
 
 .fas {
-    position: relative;
-    z-index: 10;
+  z-index: 10;
 }
 
-.header-menu {
+.nav__container {
   display: flex;
   max-width: 100%;
   width: 1000px;
   height: 60px;
   align-items: center;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
-.header-menu a,
-label {
-  margin-right: 30px;
-  padding: 6px;
-  cursor: pointer;
-}
-
-.logo-container {
-  position: relative;
-  z-index: 10;
+.nav__logo-container {
   flex: 4;
 }
 
-.logo-csm {
-  height: 50px;
-  width: auto;
-  margin: 10px;
+.nav__container a,
+label {
+  cursor: pointer;
+  margin-right: 30px;
 }
 
-.dropdown {
-    z-index: 4;
+.nav__logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.nav__dropdown-menu {
+  z-index: 4;
 }
 
 #hamburgermenu {
   display: none;
 }
 
-.dropdown {
+.nav__dropdown-menu {
   display: none;
   justify-self: right;
   animation-name: menuanimation;
@@ -113,20 +109,25 @@ label {
 }
 
 @keyframes menuanimation {
-    0% {top: -60px; opacity: 0%;}
-    100% {top: 60px}
+  0% {
+    top: -60px;
+    opacity: 0%;
+  }
+  100% {
+    top: 60px;
+  }
 }
 
-.active {
-    background-color: var(--green);
+.nav__active {
+  background-color: var(--green);
 }
 
-.dropdown a:hover {
+.nav__dropdown-menu a:hover {
   color: var(--blue);
   background-color: var(--gray);
 }
 
-.dropdown a {
+.nav__dropdown-menu a {
   text-decoration: none;
   padding: 10px 0px;
   text-align: center;
@@ -134,7 +135,7 @@ label {
   width: 100%;
 }
 
-#hamburgermenu:checked ~ .dropdown {
+#hamburgermenu:checked ~ .nav__dropdown-menu {
   display: flex;
   width: 100%;
   margin: 0 auto;
@@ -143,180 +144,6 @@ label {
   right: 0%;
   top: 60px;
   background: var(--white);
-
-}
-
-/* Main */
-
-main {
-  padding-top: 60px;
-}
-
-.headerh1 h1 {
-    margin: 0px 40px 10px 20px;
-    text-align: center;
-    color: var(--white);
-  }
-  
-  .headerh1 h2 {
-    margin: 10px 40px 20px 20px;
-    text-align: center;
-    color: var(--yellow);
-  }
-
-.index-top {
-  background: var(--black);
-  height: 300px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.index-topimg {
-    background-image: url("/images/small-background.webp");
-    background-image: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    filter: blur(4px);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-}
-
-.headerh1 {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 100px;
-}
-
-.button-container {
-    position: relative;
-    top: 300px;
-    left: 50%;
-    transform: translate(-50%);
-    max-width: 400px;
-}
-
-.cta-young {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  width: 100px;
-  text-decoration: none;
-  padding: 10px;
-  background: var(--white);
-  box-shadow: 1px 1px 5px 1px var(--yellow);
-  border-radius: 3px;
-  text-align: center;
-}
-
-.cta-info {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  width: 100px;
-  text-decoration: none;
-  padding: 10px;
-  background: var(--white);
-  box-shadow: 1px 1px 5px 1px var(--yellow);
-  border-radius: 3px;
-  text-align: center;
-}
-
-.cta-young:hover,
-.cta-info:hover {
-  background: var(--yellow);
-}
-
-.main-text {
-  text-align: center;
-  align-items: center;
-  padding: 1px;
-  padding-bottom: 10px;
-  background: var(--blue);
-}
-
-.exhibitions {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 600px;
-
-}
-
-.exhibit-spaces {
-  width: 170px;
-  height: 140px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 3px;
-  box-shadow: 0px 0px 10px 0px;
-}
-
-.exhibit-spaces img {
-  width: 100%;
-  height: 100%;
-}
-
-.exhibit-spaces a {
-  text-decoration: none;
-}
-
-.exhibit-spaces h3 {
-  color: black;
-  text-align: center;
-  position: relative;
-  bottom: 48px;
-  text-decoration: none;
-  padding: 5px;
-  background: var(--white);
-}
-
-.exhibit-spaces:hover {
-  color: var(--red);
-}
-
-.events {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  align-items: center;
-  text-align: left;
-  color: var(--white);
-}
-
-.eventsh2 {
-  text-align: center;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: var(--blue);
-}
-
-.event1,
-.event2,
-.event3 {
-  padding: 0px 10px 0px 10px;
-}
-
-.event3 p {
-  margin: 0;
-}
-
-.events img {
-  width: 100%;
-}
-
-.event2img {
-  justify-self: right;
-  grid-row: 2;
 }
 
 /* Footer */
@@ -325,7 +152,7 @@ footer {
   background: var(--black);
 }
 
-footer section {
+.footer__container {
   display: grid;
   max-width: 1000px;
   margin: 0 auto;
@@ -336,8 +163,21 @@ footer section {
   color: var(--white);
 }
 
-.footer__margin {
+.footer__divspaces--margin {
   margin-bottom: 40px;
+}
+
+.footer__openhours-text div {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__openhours-text p {
+  margin: 0 0 4px 0;
 }
 
 .fab {
@@ -354,70 +194,28 @@ footer section {
   font-family: var(--font2);
   font-weight: bold;
   font-size: 14px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 5px 0;
   background: var(--black);
   color: white;
   width: 100%;
 }
 
-.opening div{
-  display: flex;
-  justify-content: space-between;
-  white-space: nowrap;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.opening p {
-  margin: 0 0 4px 0;
-}
-
 /* Media Queries */
 
 @media only screen and (max-width: 640px) {
-  .exhibitions {
-    grid-template-columns: 1fr 1fr;
-    max-width: 400px;
-  }
-
-  .headerh1 h1 {
-    font-size: 18px;
-  }
-
-  .headerh1 h2 {
-    font-size: 14px;
-  }
-
-  strong {
-    font-size: 16px;
-  }
-
-  .events {
-    display: block;
-  }
-
-  .events h2 {
-    grid-column: 0;
-  }
-
-  footer section {
+  .footer__container {
     grid-template-columns: 1fr 1fr;
   }
-  .event1,
-  .event2,
-  .event3 {
+
+  .events__event1,
+  .events__event2,
+  .events__event3 {
     padding: 30px 10px 30px 10px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .exhibitions {
-    grid-template-columns: 1fr;
-  }
-
-  footer section {
+  .footer__container {
     grid-template-columns: 1fr;
   }
 }

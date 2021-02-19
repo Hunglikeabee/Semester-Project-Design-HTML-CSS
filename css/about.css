@@ -1,10 +1,12 @@
+/* Main */
+
 main {
   padding-bottom: 30px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.about-top {
+.main__about-text {
   background-image: url("/images/small-roomrocket.webp");
   background-repeat: no-repeat;
   background-position: 60% 40%;
@@ -13,12 +15,12 @@ main {
   max-height: 80vw;
 }
 
-h1 {
+.main__h1--styling {
   position: absolute;
   background: var(--blue);
   padding: 10px;
-  font-size: 24px;
   white-space: nowrap;
+  top: 45px;
 }
 
 h2 {
