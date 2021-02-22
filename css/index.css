@@ -181,15 +181,15 @@ main {
   }
 
   .headerh1 h1 {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 
   .headerh1 h2 {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 
   strong {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .main__events-container {
