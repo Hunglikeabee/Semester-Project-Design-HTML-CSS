@@ -12,24 +12,24 @@
 
 h1 {
   font-family: var(--font1);
-  font-size: 24px;
+  font-size: 1.8rem;
 }
 
 h2 {
   font-family: var(--font1);
-  font-size: 20px;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 h3 {
   font-family: var(--font2);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 p {
   font-family: var(--font2);
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 a {
@@ -202,7 +202,7 @@ footer h3 {
 
 /* Media Queries */
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 700px) {
   .footer__container {
     grid-template-columns: 1fr 1fr;
   }
