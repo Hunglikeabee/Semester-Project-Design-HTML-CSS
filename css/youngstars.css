@@ -34,7 +34,7 @@ main {
   background: var(--blue);
   padding: 10px;
   white-space: nowrap;
-  top: 45px;
+  top: 40px;
 }
 
 .main__section-text {
@@ -46,4 +46,11 @@ main {
 
 .main__section-text p {
   padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .main__h1--styling {
+    font-size: 1.4rem;
+    top: 59px;
+  }
 }

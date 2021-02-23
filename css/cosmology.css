@@ -42,3 +42,10 @@ main p {
   white-space: nowrap;
   top: 45px;
 }
+
+@media only screen and (max-width: 700px) {
+  .main__h1--styling {
+    font-size: 1.2rem;
+    top: 55px;
+  }
+}

@@ -12,7 +12,7 @@
 
 h1 {
   font-family: var(--font1);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -89,7 +89,7 @@ label {
 
 .nav__logo-img {
   height: 50px;
-  width: auto;
+  width: 125px;
 }
 
 .nav__dropdown-menu {
@@ -206,7 +206,7 @@ footer h3 {
   .footer__container {
     grid-template-columns: 1fr 1fr;
   }
-
+  
   .events__event1,
   .events__event2,
   .events__event3 {
@@ -214,7 +214,7 @@ footer h3 {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
   .footer__container {
     grid-template-columns: 1fr;
   }

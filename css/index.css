@@ -4,15 +4,12 @@ main {
   padding-top: 60px;
 }
 
-.headerh1 h1 {
-  margin: 0px 40px 10px 20px;
-  text-align: center;
+.main__h1--styling h1 {
+  margin: 0;
   color: var(--white);
 }
 
-.headerh1 h2 {
-  margin: 10px 40px 20px 20px;
-  text-align: center;
+.main__h1--styling h2 {
   color: var(--yellow);
 }
 
@@ -36,51 +33,50 @@ main {
   bottom: 0px;
 }
 
-.headerh1 {
+.main__h1--styling {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  text-align: center;
   left: 0;
   right: 0;
-  top: 100px;
+  top: 80px;
 }
 
 .main__cta-container {
   position: relative;
-  top: 300px;
+  top: 260px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateY(-50%);
   max-width: 400px;
 }
 
 .main__cta-young--styling {
   position: absolute;
-  bottom: 10px;
-  left: 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
   width: 100px;
   text-decoration: none;
   padding: 10px;
   background: var(--white);
   box-shadow: 1px 1px 5px 1px var(--yellow);
-  border-radius: 3px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--black);
   text-align: center;
+  animation-name: cta-attention;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
 }
 
-.main__cta-info--styling {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  width: 100px;
-  text-decoration: none;
-  padding: 10px;
-  background: var(--white);
-  box-shadow: 1px 1px 5px 1px var(--yellow);
-  border-radius: 3px;
-  text-align: center;
+@keyframes cta-attention {
+  0% {
+        opacity: 0%;
+  }
 }
 
-.main__cta-young--styling:hover,
-.main__cta-info--styling:hover {
+.main__cta-young--styling:hover {
   background: var(--yellow);
 }
 
@@ -109,11 +105,11 @@ main {
 }
 
 .exhibitions__elements img {
-    height: 100%;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  height: 100%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .exhibitions__elements a {
@@ -179,12 +175,11 @@ main {
     grid-template-columns: 1fr 1fr;
     max-width: 400px;
   }
-
-  .headerh1 h1 {
+  .main__h1--styling h1 {
     font-size: 1.2rem;
   }
 
-  .headerh1 h2 {
+  .main__h1--styling h2 {
     font-size: 0.8rem;
   }
 
@@ -201,7 +196,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
   .main__exhibitions-container {
     grid-template-columns: 1fr;
   }
