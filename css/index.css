@@ -25,12 +25,21 @@ main {
   background-image: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: blur(6px);
   position: absolute;
   left: 0px;
   top: 0px;
   right: 0px;
   bottom: 0px;
+}
+
+.main_backgorundimgoverlay {
+    background-color: var(--black);
+    opacity: 60%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .main__h1--styling {
