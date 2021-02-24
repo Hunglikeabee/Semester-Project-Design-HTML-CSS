@@ -70,12 +70,9 @@ main {
   background: var(--white);
   box-shadow: 1px 1px 5px 1px var(--yellow);
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--black);
   text-align: center;
   animation-name: cta-attention;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 
