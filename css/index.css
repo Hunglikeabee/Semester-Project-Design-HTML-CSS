@@ -112,10 +112,6 @@ main {
 
 .exhibitions__elements img {
   height: 100%;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .exhibitions__elements a {
